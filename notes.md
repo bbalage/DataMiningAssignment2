@@ -24,3 +24,14 @@ Needed to remove string typed data.
 - Upon closer observation it does not reflect whether it actually rained that day: the column "Rainfall" tells us how many millimeters of rainfall happened that day, and it does not unambigously correlate to RainToday column.
 - New columns is added to remove string: IsTodayRainy; its values are loaded according to Yes and No with ones and zeros.
 - RainToday is dropped.
+
+## Wind directions
+- Wind directions are in the format of SSE, S; where SSE = South, South-East.
+- These strings must be made numerical.
+- Each wind direction column (WindGustDir, WindDir9am, WindDir3pm) are separated into 4 distinct columns, with the following logic.
+- Each new column represents a direction (north, south, west, east), and contains a value between 0 and 1.
+- If the blows into a direction it is set to 1, else zero. If it blows South, South-East, then south is set to 2, and east to 1, then they both get normalized.
+
+## Fitting bell curve to some values
+- Bell curve fits well to some values, moderately to others, terribly to some.
+- Well: Rainfall; Moderately: MinTemp; Terribly: Cloud3pm, Cloud9am
