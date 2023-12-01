@@ -42,3 +42,9 @@ Needed to remove string typed data.
 - For example, rainfall contains the most of them (most days there are no rain at all).
 - However, none ofthe outliers seemed unreasonable; there are high temperatures, but within reasonable limits.
 - These informations could be useful for rain predictions.
+
+## Correlation
+- Creating the correlation heatmap, some observations can be taken.
+- There are obvious correlations, like between the temperatures in 9am and 3pm; they are related.
+- Also obvious are the inverse correlations, like between cloud and sunshine.
+- There are also non-correlating data members, like air pressure and wind directions.
