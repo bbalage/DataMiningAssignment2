@@ -34,7 +34,7 @@ Needed to remove string typed data.
 
 ## Fitting bell curve to some values
 - Bell curve fits well to some values, moderately to others, terribly to some.
-- Well: Rainfall; Moderately: MinTemp; Terribly: Cloud3pm, Cloud9am
+- Well: Evaporation; Moderately: MinTemp; Terribly: Cloud3pm, Cloud9am
 - Bell curv is not fitted to the generated values; wind directions and yes/no numerization.
 
 ## Creating box plot for those values
